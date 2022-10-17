@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "63428d7a4209a65d512e4b328860e471f9191e7bed8ba407b6cc824b5fc83b08"
+            "sha256": "9352060dedcb456a0ee13397ec34f2f007a6993acbc5984d616a5273309a5229"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -34,14 +34,14 @@
         },
         "binance-summary": {
             "git": "https://github.com/kefi550/binance_summary.git",
-            "ref": "e0ea902c66180859130b86f8599051d57dfab73d"
+            "ref": "3a600ca22514c4edcbc114441c3c890b3154b7b2"
         },
         "certifi": {
             "hashes": [
                 "sha256:0d9c601124e5a6ba9712dbc60d9c53c21e34f5f641fe83002317394311bdce14",
                 "sha256:90c1a32f1d68f940488354e36370f6cca89f0f106db09518524c88d6ed83f382"
             ],
-            "markers": "python_version >= '3.6'",
+            "markers": "python_full_version >= '3.6.0'",
             "version": "==2022.9.24"
         },
         "charset-normalizer": {
@@ -49,7 +49,7 @@
                 "sha256:5a3d016c7c547f69d6f81fb0db9449ce888b418b5b9952cc5e6e66843e9dd845",
                 "sha256:83e9a75d1911279afd89352c68b45348559d1fc0506b054b346651b5e7fee29f"
             ],
-            "markers": "python_version >= '3.6'",
+            "markers": "python_full_version >= '3.6.0'",
             "version": "==2.1.1"
         },
         "chromedriver-binary": {
@@ -84,7 +84,7 @@
         },
         "moneyforward-selenium": {
             "git": "https://github.com/kefi550/moneyforward_selenium.git",
-            "ref": "3b8c48515b2897486966f77e09c07c092cbfb64f"
+            "ref": "58def3182a58b6b9cff4d4da8ff7f31b619f326e"
         },
         "outcome": {
             "hashes": [
@@ -149,9 +149,6 @@
             "version": "==0.9.2"
         },
         "urllib3": {
-            "extras": [
-                "socks"
-            ],
             "hashes": [
                 "sha256:3fa96cf423e6987997fc326ae8df396db2a8b7c667747d47ddd8ecba91f4a74e",
                 "sha256:b930dd878d5a8afb066a637fbb35144fe7901e3b209d1cd4f524bd0e9deee997"

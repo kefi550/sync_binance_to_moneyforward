@@ -1,0 +1,11 @@
+version: '3'
+services:
+  sync_bi_mf:
+    build: .
+    user: root
+    volumes:
+      - selenium-vol:/root/.config/google-chrome/selenium
+    env_file:
+      - .env
+volumes:
+  selenium-vol:
