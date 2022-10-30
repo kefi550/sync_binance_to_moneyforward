@@ -4,7 +4,7 @@ services:
     build: .
     user: root
     volumes:
-      - selenium-vol:/root/.config/google-chrome/selenium
+      - selenium-vol:/mnt/docker/sync_binance_to_moneyforward
     env_file:
       - .env
 volumes:
