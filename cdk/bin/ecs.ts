@@ -17,5 +17,5 @@ new SyncBinanceToMoneyforwardTaskStack(app, 'SyncBinanceToMoneyforwardTaskStack'
   vpcStackName: vpcStackName,
   ecsClusterName: ecsClusterStack.ecsClusterName,
   ecrRepositoryName: 'sync_binance_to_moneyforward',
-  ecrImageTag: '0.1.2',
+  ecrImageTag: '0.1.3',
 });
