@@ -13,13 +13,6 @@ RUN pip install --upgrade pip && \
   pip install pipenv && \
   pipenv install --system --ignore-pipfile --deploy
 
-RUN apt update && apt install -y wget curl gnupg && \
-  wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add && \
-  echo 'deb http://dl.google.com/linux/chrome/deb/ stable main' | tee -a /etc/apt/sources.list.d/google-chrome.list && \
-  apt update && apt install -y google-chrome-stable && \
-  apt -y clean && \
-  rm -rf /var/lib/apt/lists/*
-
 ## runtime
 FROM python:3.9-slim
 COPY --from=builder /opt/chrome /usr/local/bin
@@ -32,9 +25,8 @@ COPY entrypoint.sh .
 RUN chmod +x ./entrypoint.sh
 
 RUN apt update && apt install -y wget curl gnupg && \
-  wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add && \
-  echo 'deb http://dl.google.com/linux/chrome/deb/ stable main' | tee -a /etc/apt/sources.list.d/google-chrome.list && \
-  apt update && apt install -y google-chrome-stable && \
+  wget http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_106.0.5249.61-1_amd64.deb && \
+  apt update && apt install -y -f ./google-chrome-stable_106.0.5249.61-1_amd64.deb  && \
   apt -y clean && \
   rm -rf /var/lib/apt/lists/*
 
