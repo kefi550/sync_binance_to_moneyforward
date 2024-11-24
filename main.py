@@ -10,6 +10,5 @@ if not latest_asset_eth_jpy:
     print('no latest asset')
     exit()
 
-mf = MoneyForwardScraper(MONEYFORWARD_USER, MONEYFORWARD_PASSWORD)
-mf.change_mf_group('グループ選択なし')
+mf = MoneyForwardScraper(MONEYFORWARD_USER, MONEYFORWARD_PASSWORD, group_name="グループ選択なし")
 mf.update_account_amount("Binance", latest_asset_eth_jpy)

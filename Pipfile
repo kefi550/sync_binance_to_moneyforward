@@ -4,7 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-moneyforward-selenium = {ref = "0.4.0", git = "git+https://github.com/kefi550/moneyforward_selenium"}
+moneyforward-selenium = {ref = "0.5.0", git = "git+https://github.com/kefi550/moneyforward_selenium"}
 binance-summary = {git = "https://github.com/kefi550/binance_summary.git", ref="0.1.1"}
 pymysql = "*"
 sqlalchemy = "*"

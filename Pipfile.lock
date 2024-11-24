@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "6fdea6678b6039b0783498f99c34e62649228e4d2c243ce0752314479542ed7a"
+            "sha256": "d3e826ad780349f07d19735a0c50e7a613a321033ca16b3eb52d960d95645566"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -244,7 +244,7 @@
         },
         "moneyforward-selenium": {
             "git": "git+https://github.com/kefi550/moneyforward_selenium",
-            "ref": "999fa2f98e5f83000cc1cb4b4f97562de027bc29"
+            "ref": "b17eba442d256a43e39410fc191cc810dd7ba88b"
         },
         "outcome": {
             "hashes": [
